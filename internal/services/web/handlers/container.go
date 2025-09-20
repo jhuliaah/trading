@@ -16,7 +16,7 @@ type InternalWebRestfulContainer struct {
 // NewInternalWebRestfulContainer cria um novo container RESTful
 func NewInternalWebRestfulContainer() *InternalWebRestfulContainer {
 	container := &InternalWebRestfulContainer{
-		tradingHandler: &TradingHandler{},
+		tradingHandler: NewTradingHandler(),
 	}
 
 	// Configura web service
